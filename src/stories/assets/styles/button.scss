@@ -1,4 +1,4 @@
-
+@import './variables';
 
 .sds-button {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -11,7 +11,7 @@
 }
 .sds-button--primary {
   color: white;
-  background-color: red;
+  background-color: $primary-color;
 }
 
 .sds-button--stretched{
