@@ -1,3 +1,16 @@
+# v0.1.9 (Sun Jun 20 2021)
+
+#### ⚠️ Pushed to `main`
+
+- file structure changes (sunny@tripytrek.com)
+- package name change (sunny@tripytrek.com)
+
+#### Authors: 1
+
+- Sunny Sharma (sunny@tripytrek.com)
+
+---
+
 # v0.1.8 (Sun Jun 20 2021)
 
 
