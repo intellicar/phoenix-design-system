@@ -1,3 +1,15 @@
+# v0.1.7 (Sun Jun 20 2021)
+
+#### ⚠️ Pushed to `main`
+
+- package name change (sunny@tripytrek.com)
+
+#### Authors: 1
+
+- Sunny Sharma (sunny@tripytrek.com)
+
+---
+
 # v0.1.1 (Sun Jun 20 2021)
 
 #### ⚠️ Pushed to `main`
