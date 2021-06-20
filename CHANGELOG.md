@@ -2,6 +2,19 @@
 
 #### ⚠️ Pushed to `main`
 
+- package change (sunny@tripytrek.com)
+- description chage (sunny@tripytrek.com)
+
+#### Authors: 1
+
+- Sunny Sharma (sunny@tripytrek.com)
+
+---
+
+# v0.1.1 (Sun Jun 20 2021)
+
+#### ⚠️ Pushed to `main`
+
 - description chage (sunny@tripytrek.com)
 
 #### Authors: 1
