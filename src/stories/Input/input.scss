@@ -1,0 +1,40 @@
+@import '../assets/styles/variables';
+
+.sds-input--container{
+    display: flex;
+    flex-direction: column;
+    width: 18.7rem;
+    label{
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: $text-color;
+    }
+    .sds-input--box{
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        display: flex;
+        overflow: hidden;
+        padding: 0 0.4rem;
+        margin-top: 0.3rem;
+        input{
+            width: 100%;
+            border: 0;
+            outline: 0;
+            color: $text-color;
+        }
+    }
+
+    .sds-input--small {
+        height: 2rem;
+    }
+    .sds-input--medium {
+        height: 2.25rem;
+    }
+    .sds-input--large {
+        height: 2.5rem;
+    }      
+}
+
+.sds-input--container.sds-input--stretched{
+    width: 100%;
+}
