@@ -1,5 +1,17 @@
 # v0.1.1 (Sun Jun 20 2021)
 
+#### ⚠️ Pushed to `main`
+
+- description chage (sunny@tripytrek.com)
+
+#### Authors: 1
+
+- Sunny Sharma (sunny@tripytrek.com)
+
+---
+
+# v0.1.1 (Sun Jun 20 2021)
+
 #### 🐛 Bug Fix
 
 - chages [#1](https://github.com/intellicar/phoenix-design-system/pull/1) (sunny@tripytrek.com)
