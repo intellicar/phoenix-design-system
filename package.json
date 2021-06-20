@@ -1,5 +1,5 @@
 {
-  "name": "phoenix-design-system",
+  "name": "@intellicar/phoenix-design-system",
   "version": "0.1.6",
   "private": false,
   "publishConfig": {
