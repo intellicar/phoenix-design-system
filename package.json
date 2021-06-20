@@ -77,7 +77,7 @@
   },
   "description": "The Intellicar Design System was created to help us build products for our customers more efficiently.",
   "main": "dist/index.js",
-  "repository": "https://github.com/intellicar/phoenix-design-system.git",
+  "repository": "git@github.com:intellicar/phoenix-design-system.git",
   "author": "sunny.sharma@intellicar.in",
   "license": "MIT"
 }
