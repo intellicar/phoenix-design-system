@@ -1,4 +1,4 @@
-@import '../assets/styles/variables';
+
 
 .sds-button {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -11,7 +11,7 @@
 }
 .sds-button--primary {
   color: white;
-  background-color: $primary-color;
+  background-color: red;
 }
 
 .sds-button--stretched{
