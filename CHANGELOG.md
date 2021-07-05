@@ -1,3 +1,15 @@
+# v0.1.10 (Mon Jul 05 2021)
+
+#### ⚠️ Pushed to `main`
+
+- styled component for button (sunny@tripytrek.com)
+
+#### Authors: 1
+
+- Sunny Sharma (sunny@tripytrek.com)
+
+---
+
 # v0.1.9 (Sun Jun 20 2021)
 
 #### ⚠️ Pushed to `main`
