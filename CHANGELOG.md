@@ -2,6 +2,20 @@
 
 #### ⚠️ Pushed to `main`
 
+- fixed conflict readme (sunny@tripytrek.com)
+- fixed readme (sunny@tripytrek.com)
+- Update README.md (sunny@tripytrek.com)
+
+#### Authors: 1
+
+- Sunny Sharma ([@RobinhoodSharma](https://github.com/RobinhoodSharma))
+
+---
+
+# v0.1.16 (Mon Jul 05 2021)
+
+#### ⚠️ Pushed to `main`
+
 - fixed readme (sunny@tripytrek.com)
 
 #### Authors: 1
