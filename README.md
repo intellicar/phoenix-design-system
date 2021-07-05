@@ -1,16 +1,3 @@
-import { Meta } from '@storybook/addon-docs/blocks';
-
-<Meta title="Design System/Introduction" />
-
-<style>{`
-
-  .sbdocs-content .sbdocs-p, .sbdocs-li{
-    font-size: 1rem;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-  }
-`}</style>
-
 <div class="sbdocs sbdocs-content">
   <div class="logo" style="display: flex;align-items: center;justify-content: center;margin-bottom: 3rem;">
     <img style="width: 15rem;" src="https://github.com/intellicar/phoenix-design-system/raw/main/public/intellicar.png" alt="Intellicar" />
