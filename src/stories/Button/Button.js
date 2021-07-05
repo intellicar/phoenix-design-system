@@ -1,24 +1,67 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../assets/styles/button.scss';
+import styled from 'styled-components';
 
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, stretched, ...props }) => {
-  const mode = primary ? 'sds-button--primary' : 'sds-button--secondary';
-  const type = stretched ? 'sds-button--stretched' : '';
+export const Button = ({ primary, backgroundColor, textColor, size, label, stretched, ...props }) => {
   return (
-    <button
+    <StyledButton
+      size={size}
+      primary={primary}
+      stretched={stretched}
+      style={{ backgroundColor, color:textColor }}
       type="button"
-      className={['sds-button', `sds-button--${size}`, mode, type].join(' ')}
-      style={backgroundColor && { backgroundColor }}
       {...props}
     >
       {label}
-    </button>
+    </StyledButton>
   );
 };
+
+const RawButton = styled.button`
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+`
+const SizedButton = styled(RawButton)`
+  font-size: ${props => {
+    if(props.size === 'small'){
+      return '12px'
+    } else if(props.size === 'medium'){
+      return '14px'
+    } else if(props.size === 'large'){
+      return '16px'
+    }
+  }};
+  padding: ${props => {
+    if(props.size === 'small'){
+      return '10px 16px'
+    } else if(props.size === 'medium'){
+      return '11px 20px'
+    } else if(props.size === 'large'){
+      return '12px 24px'
+    }
+  }};
+`
+
+const IsPrimaryButton = styled(SizedButton)`
+  color: ${props => props.primary ? 'white' : '#333'};
+  background-color: ${props => props.primary ? '#E62F4D' : 'white'};
+  box-shadow: ${props => props.primary ? 'none' : 'rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset'};
+`
+
+const IsStretchedButton = styled(IsPrimaryButton)`
+  width: ${props => props.stretched ? '100%' : 'unset'};
+`
+
+const StyledButton = styled(IsStretchedButton)``
+
 
 Button.propTypes = {
   /**
@@ -33,6 +76,10 @@ Button.propTypes = {
    * What background color to use
    */
   backgroundColor: PropTypes.string,
+  /**
+   * What text color to use
+   */
+   textColor: PropTypes.string,
   /**
    * How large should the button be?
    */
@@ -49,7 +96,8 @@ Button.propTypes = {
 
 Button.defaultProps = {
   backgroundColor: null,
-  primary: false,
+  textColor: null,
+  primary: true,
   size: 'medium',
   onClick: undefined,
 };
