@@ -1,6 +1,6 @@
 {
   "name": "@intellicar/phoenix-design-system",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": false,
   "publishConfig": {
     "access": "public"
