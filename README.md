@@ -1,6 +1,6 @@
 <div class="sbdocs sbdocs-content">
   <div class="logo" style="display: flex;align-items: center;justify-content: center;margin-bottom: 3rem;">
-    <img style="width: 15rem;" src="https://github.com/intellicar/phoenix-design-system/raw/main/public/intellicar.png" alt="Intellicar" />
+    <img width="15rem" style="width: 15rem;" src="https://github.com/intellicar/phoenix-design-system/raw/main/public/intellicar.png" alt="Intellicar" />
   </div>
 	<h1 id="introduction-to-the-intellicar-design-system" class="sbdocs sbdocs-h1">
     <a style="color: #E62F4D !important" aria-hidden="true" href="#introduction-to-the-intellicar-design-system" tabindex="-1" target="_self" class="css-yi0p10">
