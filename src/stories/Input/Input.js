@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../assets/styles/input.scss';
 
 export const Input = ({ type, placeholder, size, label, stretched, ...props }) => {
     const viewType = stretched ? 'sds-input--stretched' : '';

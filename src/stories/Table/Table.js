@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
-import '../assets/styles/table.scss';
 
 export const Table = ({dataSource, columns, downloadable, scrollable, ...props }) => {
     const [filteredColumn, setFilteredColumn] = useState(columns);
