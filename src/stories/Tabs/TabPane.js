@@ -6,6 +6,7 @@ export const TabPane = ({tab, key, ...props }) => {
 
     useEffect(() => {
 		console.log("child props",props);
+        console.log("child tab",tab);
 	})
 
     return(
