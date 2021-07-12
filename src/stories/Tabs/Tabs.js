@@ -9,7 +9,7 @@ export const Tabs = ({ defaultActiveKey, onChange, children, ...props }) => {
 	const [activeTab, setActiveTab] = useState(defaultActiveKey);
 
 	const renderTabPane = () => {
-		Children.map(children, child => {
+		return Children.map(children, child => {
 			if (isValidElement(child) && activeTab === child.key) {
 			  return cloneElement(child, { isActive: defaultActiveKey ===  child.key})
 			}
@@ -19,7 +19,7 @@ export const Tabs = ({ defaultActiveKey, onChange, children, ...props }) => {
 	}
 
 	const renderTabs = () => {
-		children.forEach((child) => {
+		return children.map((child) => {
 			return(
 				<div className="tabs" onClick={() => {setActiveTab(child.key)}} >{child.props.tab} {activeTab === child.key ? 'active' : ''}</div>
 			)
