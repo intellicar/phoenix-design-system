@@ -7,7 +7,7 @@ import { TabPane } from './TabPane';
 export const Tabs = ({ defaultActiveKey, onChange, ...props }) => {
 
 	useEffect(() => {
-		console.log(props);
+		console.log("parent props",props);
 	})
 
     return(

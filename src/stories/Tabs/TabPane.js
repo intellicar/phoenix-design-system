@@ -3,8 +3,13 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 export const TabPane = ({tab, key, ...props }) => {
+
+    useEffect(() => {
+		console.log("child props",props);
+	})
+
     return(
-        <TabPaneContainer>Tabs Pane</TabPaneContainer>
+        <TabPaneContainer>{props.children}</TabPaneContainer>
     )
 }
 
