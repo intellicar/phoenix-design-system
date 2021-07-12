@@ -12,7 +12,7 @@ export const Tabs = ({ defaultActiveKey, onChange, ...props }) => {
 
     return(
         <TabsContainer>
-			<TabPane />
+			{props.children}
         </TabsContainer>
     )
 
