@@ -11,9 +11,9 @@ const Template = (args) => <Table {...args} />;
 
 export const Default = Template.bind({});
 
-export const Scrollable = Template.bind({});
-Scrollable.args = {
-  scrollable: true
+export const HScroll = Template.bind({});
+HScroll.args = {
+  HScroll: true
 };
 
 export const Downloadable = Template.bind({});

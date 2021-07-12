@@ -15,12 +15,12 @@ const Template = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
+  primary: true,
   label: 'Click Me!',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  primary: false,
   label: 'Click Me!',
 };
 
@@ -30,8 +30,8 @@ Large.args = {
   label: 'Click Me!',
 };
 
-export const Medium = Template.bind({});
-Medium.args = {
+export const Regular = Template.bind({});
+Regular.args = {
   size: 'medium',
   label: 'Click Me!',
 };
