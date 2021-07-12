@@ -13,7 +13,7 @@ export const Tabs = ({ defaultActiveKey, onChange, children, ...props }) => {
 			if (isValidElement(child) && activeTab === child.key) {
 			  return cloneElement(child, { isActive: defaultActiveKey ===  child.key})
 			}
-			return child;
+			// return child;
 		});
 	  
 	}
