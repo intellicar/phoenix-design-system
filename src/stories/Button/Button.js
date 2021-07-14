@@ -99,5 +99,5 @@ Button.defaultProps = {
   textColor: null,
   primary: false,
   size: 'medium',
-  onClick: undefined,
+  onClick: () => {console.log("Clicked")},
 };
