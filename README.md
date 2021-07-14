@@ -70,4 +70,24 @@
 		<li class="sbdocs sbdocs-li" style="font-size: 1rem;letter-spacing: 1px;word-spacing: 2px;">Creates the foundation for scale, with other product teams and markets</li>
 		<li class="sbdocs sbdocs-li" style="font-size: 1rem;letter-spacing: 1px;word-spacing: 2px;">Improves the onboarding experience for product team members</li>
 	</ul>
+
+    <h3 id="collaboration" class="sbdocs sbdocs-h3">
+    <a aria-hidden="true" href="#collaboration" tabindex="-1" target="_self" class="css-yi0p10">
+      How To Use?
+    </a>
+  </h3>
+
+  <code class="sbdocs sbdocs-p css-h1r25o">npm i @intellicar/phoenix-design-system</code>
+  <h4 id="benefits-2" class="sbdocs sbdocs-h4 css-hsks4z"><a>Example for button</a></h4>
+
+  <code>
+    {"import { Button } from '@intellicar/phoenix-design-system'"}
+  </code>
+  <br />
+  <br />
+  <code>
+    {'<Button label="Click Me!" onClick: () => {console.log("Clicked")} />'}
+  </code>
+
+  <h4>For more info, visit <a href="https://uikit.intellicar.in" target="_blank">https://uikit.intellicar.in</a></h4>
 </div>
