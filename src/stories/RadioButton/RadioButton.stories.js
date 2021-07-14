@@ -6,7 +6,7 @@ export default {
   title: 'Design System/Components/RadioButton',
   component: RadioButton,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    primaryColor: { control: 'color' },
     tickColor: { control: 'color' },
   },
 };

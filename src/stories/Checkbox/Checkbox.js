@@ -5,14 +5,14 @@ import styled from 'styled-components';
 /**
  * Primary UI component for user interaction
  */
-export const Checkbox = ({ backgroundColor, tickColor, size, defaultChecked, value, label, name, onChange, ...props }) => {
+export const Checkbox = ({ primaryColor, tickColor, size, defaultChecked, value, label, name, onChange, ...props }) => {
   return (
     <CheckboxContainer>
         <CheckboxLabel size={size}>{label}
             <RawCheckbox
                 type="checkbox"
                 name={name} 
-                backgroundColor={backgroundColor}
+                primaryColor={primaryColor}
                 value={value} 
                 defaultChecked={defaultChecked}
                 onChange={(evt) => {onChange(evt, evt.target.checked);}} 
@@ -118,7 +118,7 @@ const RawCheckbox = styled.input`
     width: 0;
 
     &:checked + ${CheckMark} {
-        background-color: ${props => props.backgroundColor ? props.backgroundColor : '#E62F4D'};
+        background-color: ${props => props.primaryColor ? props.primaryColor : '#E62F4D'};
         &:after {
             display: block;
         }
@@ -129,7 +129,7 @@ Checkbox.propTypes = {
     /**
      * What background color to use
      */
-    backgroundColor: PropTypes.string,
+    primaryColor: PropTypes.string,
     /**
     * What tick color to use
     */
@@ -161,7 +161,7 @@ Checkbox.propTypes = {
 };
   
 Checkbox.defaultProps = {
-    backgroundColor: null,
+    primaryColor: null,
     tickColor: null,
     primary: false,
     size: 'medium',

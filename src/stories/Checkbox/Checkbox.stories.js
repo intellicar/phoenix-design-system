@@ -6,7 +6,7 @@ export default {
   title: 'Design System/Components/Checkbox',
   component: Checkbox,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    primaryColor: { control: 'color' },
     tickColor: { control: 'color' },
   },
 };

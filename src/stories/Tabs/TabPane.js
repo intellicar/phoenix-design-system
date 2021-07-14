@@ -4,17 +4,14 @@ import styled from 'styled-components';
 
 export const TabPane = ({tab, key, ...props }) => {
 
-    useEffect(() => {
-		console.log("child props",props);
-        console.log("child tab",tab);
-	})
-
     return(
         <TabPaneContainer>{props.children}</TabPaneContainer>
     )
 }
 
 const TabPaneContainer = styled.div`
+    padding: 0.5rem;
+    flex:1;
 `
 
 TabPane.propTypes = {

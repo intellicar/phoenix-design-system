@@ -5,14 +5,14 @@ import styled from 'styled-components';
 /**
  * Primary UI component for user interaction
  */
-export const RadioButton = ({ backgroundColor, tickColor, size, defaultChecked, value, label, name, onChange, ...props }) => {
+export const RadioButton = ({ primaryColor, tickColor, size, defaultChecked, value, label, name, onChange, ...props }) => {
   return (
     <RadioContainer>
         <RadioLabel size={size}>{label}
             <RawRadio
                 type="radio"
                 name={name} 
-                backgroundColor={backgroundColor}
+                primaryColor={primaryColor}
                 value={value} 
                 defaultChecked={defaultChecked}
                 onChange={(evt) => {onChange(evt, evt.target.value);}} 
@@ -101,7 +101,7 @@ const RawRadio = styled.input`
     width: 0;
 
     &:checked + ${RadioMark} {
-        background-color: ${props => props.backgroundColor ? props.backgroundColor : '#E62F4D'};
+        background-color: ${props => props.primaryColor ? props.primaryColor : '#E62F4D'};
         &:after {
             display: block;
         }
@@ -110,9 +110,9 @@ const RawRadio = styled.input`
 
 RadioButton.propTypes = {
     /**
-     * What background color to use
+     * What primary color to use
      */
-    backgroundColor: PropTypes.string,
+    primaryColor: PropTypes.string,
     /**
     * What tick color to use
     */
@@ -144,7 +144,7 @@ RadioButton.propTypes = {
 };
   
 RadioButton.defaultProps = {
-    backgroundColor: null,
+    primaryColor: null,
     tickColor: null,
     primary: false,
     size: 'medium',

@@ -5,13 +5,13 @@ import styled from 'styled-components';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, textColor, size, label, stretched, ...props }) => {
+export const Button = ({ primary, primaryColor, textColor, size, label, stretched, ...props }) => {
   return (
     <StyledButton
       size={size}
       primary={primary}
       stretched={stretched}
-      style={{ backgroundColor, color:textColor }}
+      style={{ backgroundColor: primaryColor, color:textColor }}
       type="button"
       {...props}
     >
@@ -75,7 +75,7 @@ Button.propTypes = {
   /**
    * What background color to use
    */
-  backgroundColor: PropTypes.string,
+  primaryColor: PropTypes.string,
   /**
    * What text color to use
    */
@@ -95,7 +95,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
+  primaryColor: null,
   textColor: null,
   primary: false,
   size: 'medium',
