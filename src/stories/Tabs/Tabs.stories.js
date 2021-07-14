@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { Title, Subtitle, Description, Primary, ArgsTable, Stories } from '@storybook/addon-docs';
+import { Title, Subtitle, Description, Primary, ArgsTable, Stories } from '@storybook/addon-essentials';
 
 
 import { Tabs } from './Tabs';
@@ -12,24 +12,24 @@ export default {
     argTypes: {
         primaryColor: { control: 'color' },
     },
-    parameters: {
-        docs: {
-            page: () => (
-                <>
-                    <Title />
-                    <h2>Usage</h2>
-                    <code>{"import { Tabs } from '@intellicar/phoenix-design-system';"}</code>
-                    <br />
-                    <code>{"const { TabPane } = Tabs;"}</code>
-                    <Subtitle />
-                    <Description />
-                    <Primary />
-                    <ArgsTable />
-                    <Stories />
-                </>
-            )
-        }
-    }
+    // parameters: {
+    //     docs: {
+    //         page: () => (
+    //             <>
+    //                 <Title />
+    //                 <h2>Usage</h2>
+    //                 <code>{"import { Tabs } from '@intellicar/phoenix-design-system';"}</code>
+    //                 <br />
+    //                 <code>{"const { TabPane } = Tabs;"}</code>
+    //                 <Subtitle />
+    //                 <Description />
+    //                 <Primary />
+    //                 <ArgsTable />
+    //                 <Stories />
+    //             </>
+    //         )
+    //     }
+    // }
 
 };
 
