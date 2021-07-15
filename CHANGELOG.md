@@ -1,3 +1,15 @@
+# v0.1.32 (Thu Jul 15 2021)
+
+#### ⚠️ Pushed to `main`
+
+- changes (sunny@tripytrek.com)
+
+#### Authors: 1
+
+- Sunny Sharma (sunny@tripytrek.com)
+
+---
+
 # v0.1.31 (Thu Jul 15 2021)
 
 
