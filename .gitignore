@@ -12,6 +12,8 @@
 /build
 dist
 /dist
+storybook-static
+/storybook-static
 .env
 
 # misc
