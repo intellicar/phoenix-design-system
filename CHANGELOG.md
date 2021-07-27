@@ -1,3 +1,16 @@
+# v0.1.33 (Tue Jul 27 2021)
+
+#### ⚠️ Pushed to `main`
+
+- table updates (sunny@openkube.com)
+- changes (sunny@openkube.com)
+
+#### Authors: 1
+
+- Sunny Sharma (sunny@openkube.com)
+
+---
+
 # v0.1.32 (Thu Jul 15 2021)
 
 #### ⚠️ Pushed to `main`
