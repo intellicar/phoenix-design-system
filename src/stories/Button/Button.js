@@ -21,7 +21,6 @@ export const Button = ({ primary, primaryColor, textColor, size, label, stretche
 };
 
 const RawButton = styled.button`
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
   border-radius: 4px;
