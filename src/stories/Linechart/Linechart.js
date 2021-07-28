@@ -7,7 +7,7 @@ import * as d3 from "d3";
 /**
  * Primary UI component for user interaction
  */
-export const Barchart = ({ primary, primaryColor, textColor, size, label, stretched, ...props }) => {
+export const Linechart = ({ primary, primaryColor, textColor, size, label, stretched, ...props }) => {
 
     useEffect(() => {
         plotGraph();
@@ -260,9 +260,10 @@ export const Barchart = ({ primary, primaryColor, textColor, size, label, stretc
         let line = d3.line()
                         .defined(d => !isNaN(d.yData))
                         .x(d => x(d.xData))
-                        .y(d => y(d.yData));
+                        .y(d => y(d.yData))
+                        .curve (d3.curveBundle.beta ( 1 ) );
 
-        const svg = d3.select('.barChartContainer').append("svg")
+        const svg = d3.select('.linechartContainer').append("svg")
             .attr("viewBox", [0, 0, width, height]);
 
         svg.append("g")
@@ -285,15 +286,15 @@ export const Barchart = ({ primary, primaryColor, textColor, size, label, stretc
         // return svg.node();
     }
     return (
-        <div className="barChartContainer"></div>
+        <div className="linechartContainer"></div>
     );
 };
 
 
-Barchart.propTypes = {
+Linechart.propTypes = {
   
 };
 
-Barchart.defaultProps = {
+Linechart.defaultProps = {
   
 };

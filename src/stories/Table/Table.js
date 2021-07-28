@@ -53,19 +53,6 @@ export const Table = ({dataSource, columns, downloadable, HScroll, striped, slim
             csvContent += dataArr.join(",") + "\r\n";
         }
         downloadCSV(csvContent);
-        // const rows = [
-        //     ["name1", "city1", "some other info"],
-        //     ["name2", "city2", "more info"]
-        // ];
-        
-        // let csvContent = "data:text/csv;charset=utf-8,";
-        
-        // rows.forEach(function(rowArray) {
-        //     let row = rowArray.join(",");
-        //     csvContent += row + "\r\n";
-        // });
-
-        // downloadCSV(csvContent);
     }
 
     const filterDataSource = () => {
@@ -350,7 +337,7 @@ const TheadTR = styled.tr`
 const TheadTH = styled.th`
     text-align: left;
     font-weight: 600;
-    font-size: ${props => props.slim ? '0.8rem' : '0.9rem'};
+    font-size: ${props => props.slim ? '0.6rem' : '0.9rem'};
     padding: 0 0.5rem;
     text-align: ${props => props.align ? props.align : 'left'};
     &:last-child {
@@ -383,7 +370,7 @@ const TBodyTR = styled.tr`
 
 const TBodyTD = styled.td`
     border-top: 1px solid #EDF1F2;
-    font-size: ${props => props.slim ? '0.8rem' : '0.9rem'};
+    font-size: ${props => props.slim ? '0.6rem' : '0.9rem'};
     padding: 0 0.5rem;
     text-align: ${props => props.align ? props.align : 'left'};
     ${props => props.bordered ? 'border: 1px solid #EDF1F2;' : ''};

@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Barchart } from './Barchart';
+import { Linechart } from './Linechart';
 
 export default {
-  title: 'Design System/Widgets/Barchart',
-  component: Barchart,
+  title: 'Design System/Widgets/Linechart',
+  component: Linechart,
   argTypes: {
     primaryColor: { control: 'color' },
     textColor: { control: 'color' },
@@ -17,4 +17,4 @@ const ChartContainer = styled.div`
     height:10rem;
 `
 
-export const Default = (args) => <ChartContainer><Barchart {...args} /></ChartContainer>;
+export const Default = (args) => <ChartContainer><Linechart {...args} /></ChartContainer>;
