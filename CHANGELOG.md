@@ -1,3 +1,15 @@
+# v0.1.35 (Wed Jul 28 2021)
+
+#### ⚠️ Pushed to `main`
+
+- table font size for slip (sunny@openkube.com)
+
+#### Authors: 1
+
+- Sunny Sharma (sunny@openkube.com)
+
+---
+
 # v0.1.33 (Tue Jul 27 2021)
 
 #### ⚠️ Pushed to `main`
