@@ -49,11 +49,19 @@ function ColorLuminance(hex, lum) {
   return rgb;
 }
 
+const handleDelete = (e, props) => {
+  e.stopPropagation();
+  props.onDelete();
+};
+
+const disabledStyles = { "pointer-events": "none", opacity: "0.5" };
+
 export const Chip = ({ ...props }) => {
   return (
     <div style={{ width: "fit-content" }}>
       <StyledChip
         {...props}
+        style={props.disabled ? disabledStyles : {}}
         id="chip"
         onClick={(e) => {
           if (props.interactive) {
@@ -62,11 +70,44 @@ export const Chip = ({ ...props }) => {
           props.onClick();
         }}
       >
-        <span>{props.label}</span>
+        {props.avatar ? <Avatar src={props.avatar} /> : null}
+        <span style={{ marginLeft: props.avatar || props.deleteIcon ? 4 : 0 }}>
+          {props.label}
+        </span>
+        {props.avatar || props.deleteIcon ? (
+          <Icon
+            {...props}
+            onClick={(e) => (props.onDelete ? handleDelete(e, props) : null)}
+          >
+            {props.deleteIcon ? props.deleteIcon : null}
+          </Icon>
+        ) : null}
       </StyledChip>
     </div>
   );
 };
+
+const Avatar = styled.img`
+  height: 100%;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  margin-right: 2px;
+`;
+
+const iconContainer = styled.span`
+  margin-left: 6px;
+  display: flex;
+  color: gray;
+  cursor: pointer;
+`;
+const Icon = styled(iconContainer)`
+  svg {
+    font-size: 16px;
+    fill: ${(props) => {
+      return props.color === "primary" ? "white" : "gray";
+    }};
+  }
+`;
 
 const RawChip = styled.div`
   min-width: 5rem;
@@ -111,9 +152,9 @@ const SizedChip = styled(RawChip)`
   }};
   font-size: ${(props) => {
     if (props.size === "small") {
-      return "10px";
+      return "9px";
     } else if (props.size === "medium") {
-      return "12px";
+      return "11px";
     } else if (props.size === "large") {
       return "16px";
     }
@@ -161,7 +202,21 @@ const AccessiblityChip = styled(variantButton)`
             -0.2
           );
     }};
-  }
+  };
+  padding: ${(props) => {
+    if (props.avatar) {
+      return "4px";
+    } else if (props.deleteIcon) {
+      return "4px 6px";
+    }
+  }};
+  justify-content: ${(props) => {
+    if (props.avatar || props.deleteIcon) {
+      return "space-between";
+    } else {
+      return "center";
+    }
+  }};
 
 };
 `;
@@ -194,11 +249,14 @@ Chip.propTypes = {
   /**
    * Optional click handler
    */
-  onClick: PropTypes.element,
+  onClick: PropTypes.func,
   /**
    * Optional Avatar Icon
    */
-  avatar: PropTypes.element,
+  avatar: PropTypes.string,
+  deleteIcon: PropTypes.element,
+  onDelete: PropTypes.func,
+  disabled: PropTypes.bool,
 };
 
 Chip.defaultProps = {
