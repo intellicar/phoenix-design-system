@@ -6,5 +6,6 @@ configure({ adapter: new Adapter() });
 describe("chip test", () => {
   test("testing the required props of widget", () => {
     const element = shallow(<Chip />);
+    console.log("props test:", element.props().children.props.size);
   });
 });
