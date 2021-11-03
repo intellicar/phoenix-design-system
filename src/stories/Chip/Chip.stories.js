@@ -91,5 +91,5 @@ Elevation.args = {
   label: "Elevation",
   size: "medium",
   deleteIcon: <FaTimesCircle />,
-  elevation: 4,
+  elevation: 2,
 };
